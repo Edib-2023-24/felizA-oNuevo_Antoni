@@ -16,4 +16,110 @@
 
 /* Colores */
 
+:root {
+  /* Mode 1 */
+  /* colors */
+  --color-amarillo: #dfa704;
+  --color-amarillomedio: #b97d04;
+  --color-amarillooscuro: #785102;
+  --color-amarilloquemado: #715d36;
+}
+
 /* ******************************** */
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Hind', sans-serif;
+  line-height: 1;
+}
+
+#container {
+
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../img/desktop/fondo.png);
+
+
+}
+
+.time-range {
+  background: var(--color_amarillo, #DFA704);
+}
+
+.info-time {
+
+  width: 20%;
+  height: 40vh;
+  display: grid;
+  grid-template-columns: 50px 500px;
+  grid-template-rows: repeat(3, 1fr);
+  padding-top: 40px;
+  gap: .9375rem;
+}
+
+.minutos,
+.horas,
+.dias {
+
+  grid-column: 2/3;
+
+}
+
+.minutos {
+
+  color: var(--color_amarillomedio, #B97D04);
+  font-family: Hind;
+  font-size: 181.838px;
+  font-weight: 600;
+}
+
+
+.horas {
+
+  color: var(--color_amarillooscuro, #785102);
+  font-family: Hind;
+  font-size: 181.838px;
+  font-weight: 600;
+}
+
+.dias {
+  color: var(--color_amarilloquemado, #715D36);
+  font-family: Hind;
+  font-size: 181.838px;
+  font-weight: 600;
+}
+
+.letras-minutos {
+  color: var(--color_amarillomedio, #B97D04);
+  font-family: Hind;
+  font-size: 50px;
+  font-weight: 300;
+  margin: 20px;
+}
+
+.letras-horas {
+
+  color: var(--color_amarillooscuro, #785102);
+  font-family: Hind;
+  font-size: 50px;
+  font-weight: 300;
+  margin: 20px;
+}
+
+.letras-dias {
+  color: var(--color_amarilloquemado, #715D36);
+  font-family: Hind;
+  font-size: 50px;
+  font-weight: 300;
+  margin: 20px;
+}
+
+.time-range {
+
+  background: var(--color_amarillo, #DFA704);
+  grid-column: 1/2;
+  grid-row: 1/-1;
+
+}
